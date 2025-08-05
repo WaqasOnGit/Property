@@ -1,0 +1,66 @@
+.hover-fill {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.3s ease;
+}
+
+.hover-fill::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: #2C2E33; /* Light transparent overlay */
+  z-index: -1;
+  transition: width 0.4s ease;
+}
+
+/* Animation trigger */
+.hover-fill:hover::before,
+.hover-fill:focus::before {
+  width: 100%;
+}
+
+/* Optional: maintain text color */
+.hover-fill:hover,
+.hover-fill:focus {
+  color: inherit;
+}
+/* overflow-orange */
+
+.hover-fill-Orange {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.3s ease;
+  border: 1px solid #F1913D;
+  color: #F1913D;
+  border-radius: 10px;
+}
+
+.hover-fill-Orange::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: #F1913D; /* Light transparent overlay */
+  z-index: -1;
+  transition: width 0.4s ease;
+}
+
+/* Animation trigger */
+.hover-fill-Orange:hover::before,
+.hover-fill-Orange:focus::before {
+  width: 100%;
+  
+}
+
+/* Optional: maintain text color */
+.hover-fill-Orange:hover,
+.hover-fill-Orange:focus {
+  color: white;
+}

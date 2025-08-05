@@ -1,0 +1,109 @@
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./Picture/page-title-1.246f2c2a.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.text-orange {
+  color: #f58838 !important;
+}
+
+.add-property {
+  border: 1px solid #f58838;
+  border-radius: 10px;
+  padding: 6px 14px;
+  color: #f58838;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.add-property:hover {
+  background-color: #f58838;
+  color: white;
+}
+
+.offcanvas {
+  width: 260px;
+}
+
+/* Dropdown columns */
+.dropdown-large {
+  width: 700px;
+  border-radius: 12px;
+  background-color: #fff;
+  border: none;
+}
+
+.dropdown-large-home {
+  width: 300px;
+  border-radius: 12px;
+  background-color: #fff;
+  border: none;
+}
+.dropdown-large .dropdown-header {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #000;
+}
+
+/* Dropdown animation */
+.fade-down {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease-in-out;
+  display: block !important;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.dropdown-menu.show.fade-down {
+  opacity: 1;
+  transform: translateY(0px);
+  visibility: visible;
+  pointer-events: auto;
+}
+
+/* Hover dropdown (desktop only) */
+@media (min-width: 992px) {
+  .dropdown-hover:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    transform: translateY(0px);
+    visibility: visible;
+    pointer-events: auto;
+  }
+}
+
+/* header-site */
+/* #title-contanier{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    min-height: 100vh;     
+  margin: 0;
+}
+.title-text{
+  font-family: 'Outfit', sans-serif;
+  color: #fff;
+  font-size: 66px;
+    font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+} */
